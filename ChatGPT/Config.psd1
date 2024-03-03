@@ -1,3 +1,3 @@
 @{
-    secretKey = "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"
+    secretKey = "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"
 }

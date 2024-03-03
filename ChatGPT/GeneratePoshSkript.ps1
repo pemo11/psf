@@ -10,16 +10,17 @@ $ConfigData = Import-PowerShellDataFile -Path $ConfigPath
 $env:OpenAIKey = $ConfigData.secretKey
 
 $RequestBody = @{
-    prompt = "list of planets only names as xml"
     model = "gpt-3.5-turbo-1106"
-    temperature = 1
-    Stop = "."
+    temperature = 0.7
+    messages = @(
+        @{role="user";content="Say hello to the world!"}
+        )
 }
 
 $Header =@{ Authorization = "Bearer $($env:OpenAIKey) " }
 $RequestBody=$RequestBody | ConvertTo-Json
 
-$OpenAIUri = "https://api.openai.com/v1/completions"
+$OpenAIUri = "https://api.openai.com/v1/chat/completions"
 
 $RestMethodParameter = @{
     Method = "Post"
