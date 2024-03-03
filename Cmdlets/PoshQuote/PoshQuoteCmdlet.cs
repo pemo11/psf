@@ -4,6 +4,8 @@
 using System;
 using System.Management.Automation;
 
+// Dank DefaultParameterSetName = "*" kann das Cmdlet auch ohne Parameter aufgerufen werden
+// Dieser "Geheimtipp" rettet mich seit fast 20 Jahren;)
 [Cmdlet(VerbsCommon.Get, "PoshQuote", DefaultParameterSetName = "*")]
 public class PoshQuoteCmdlet : Cmdlet
 {
