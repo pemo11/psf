@@ -34,10 +34,10 @@ function Get-Speicherkosten
     }
 }
 
-$Path = 'E:\2018'
+$Path = 'D:\2024'
 
 # Get-Speicherkosten($Path)
 
-# Get-Speicherkosten -Path $Path -KostenMB 2 -Verbose
+# Get-Speicherkosten -Path $Path -KostenMB 2 -Verbose -Html -HtmlFilePath Test.html
 
-# Get-Speicherkosten $Path
+Get-Speicherkosten -Html -Path $Path 
