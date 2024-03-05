@@ -1,6 +1,5 @@
 ﻿Set-StrictMode -Version Latest
 
-
 <#
  .Synopsis
  Berechnen der Speicherkosten

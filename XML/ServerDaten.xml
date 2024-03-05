@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<ps:serverdaten xmlns:ps="poshkurs#1234">
+    <ps:server id="S_1000">
+        <ps:size>Small</ps:size>
+        <ps:manufacturer>Dell</ps:manufacturer>
+        <ps:productType>PowerEdge K9</ps:productType>
+        <ps:cost>1.2</ps:cost>
+        <ps:purchaseDate>01/02/2004</ps:purchaseDate>
+    </ps:server>
+    <ps:server id="S_1001">
+        <ps:size>Medium</ps:size>
+        <ps:manufacturer>HP</ps:manufacturer>
+        <ps:productType>Pro Liant XL</ps:productType>
+        <ps:cost>2.2</ps:cost>
+        <ps:purchaseDate>04/05/2006</ps:purchaseDate>
+    </ps:server>
+    <ps:server id="S_1002">
+        <ps:size>big</ps:size>
+        <ps:manufacturer>HP</ps:manufacturer>
+        <ps:productType>ProLiant BL500</ps:productType>
+        <ps:cost>3.6</ps:cost>
+        <ps:purchaseDate>12/09/2006</ps:purchaseDate>
+    </ps:server>
+    <ps:server id="S_1003">
+        <ps:size>medium</ps:size>
+        <ps:manufacturer>Dell</ps:manufacturer>
+        <ps:productType>PowerEdge R620</ps:productType>
+        <ps:cost>2.1</ps:cost>
+        <ps:purchaseDate>30/06/2004</ps:purchaseDate>
+    </ps:server>
+    <ps:server id="S_1004">
+        <ps:size>big</ps:size>
+        <ps:manufacturer>HP</ps:manufacturer>
+        <ps:productType>ProLiant BL680</ps:productType>
+        <ps:cost>3.6</ps:cost>
+        <ps:purchaseDate>12/09/2006</ps:purchaseDate>
+    </ps:server>
+    <ps:server id="S_1005">
+        <ps:size>small</ps:size>
+        <ps:manufacturer>Lenovo</ps:manufacturer>
+        <ps:productType>x3650</ps:productType>
+        <ps:cost>1.1</ps:cost>
+        <ps:purchaseDate>17/08/2005</ps:purchaseDate>
+    </ps:server>
+    <ps:server id="S_1006">
+        <ps:size>medium</ps:size>
+        <ps:manufacturer>Dell</ps:manufacturer>
+        <ps:productType>PowerEdge R640</ps:productType>
+        <ps:cost>2.4</ps:cost>
+        <ps:purchaseDate>04/05/2004</ps:purchaseDate>
+    </ps:server>
+    <ps:server id="S_1007">
+        <ps:size>small</ps:size>
+        <ps:manufacturer>Lenovo</ps:manufacturer>
+        <ps:productType>ThinkServer X1</ps:productType>
+        <ps:cost>1.1</ps:cost>
+        <ps:purchaseDate>17/08/2005</ps:purchaseDate>
+    </ps:server>
+    <ps:server id="S_1008">
+        <ps:size>small</ps:size>
+        <ps:manufacturer>Dell</ps:manufacturer>
+        <ps:productType>PowerEdge T110</ps:productType>
+        <ps:cost>1.4</ps:cost>
+        <ps:purchaseDate>06/02/2004</ps:purchaseDate>
+    </ps:server>
+    <ps:server id="S_1009">
+        <ps:size>medium</ps:size>
+        <ps:manufacturer>Dell</ps:manufacturer>
+        <ps:productType>PowerEdge 800</ps:productType>
+        <ps:cost>2.1</ps:cost>
+        <ps:purchaseDate>07/09/2004</ps:purchaseDate>
+    </ps:server>
+</ps:serverdaten>

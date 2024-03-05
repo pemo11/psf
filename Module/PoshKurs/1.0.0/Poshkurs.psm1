@@ -31,7 +31,7 @@ function New-ADUserCSV
 
 <#
  .SYNOPSIS
- CSV-Konvertierung ohne AnfÃ¼hrungszeichen fÃ¼r Windows PowerShell
+ CSV-Konvertierung ohne Anführungszeichen für Windows PowerShell
  .Notes
  https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/exporting-csv-without-quotes-and-other-conversion-tricks
 #>
