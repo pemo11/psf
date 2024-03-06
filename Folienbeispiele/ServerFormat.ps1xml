@@ -1,0 +1,44 @@
+<Configuration>
+  <ViewDefinitions>
+    <View>
+        <Name>Servertype</Name>
+        <ViewSelectedBy>
+            <TypeName>Server</TypeName>
+        </ViewSelectedBy>
+        <TableControl>
+            <TableHeaders>
+                <TableColumnHeader>
+                    <Label>Name</Label>
+                    <Width>20</Width>
+                </TableColumnHeader>
+                <TableColumnHeader>
+                    <Label>Status</Label>
+                    <Width>20</Width>
+                </TableColumnHeader>
+                <TableColumnHeader>
+                    <Label>Starttime</Label>
+                    <Width>20</Width>
+                </TableColumnHeader>
+            </TableHeaders>
+            <TableRowEntries>
+                <TableRowEntry>
+                    <TableColumnItems>
+                        <TableColumnItem>
+                            <PropertyName>Name</PropertyName>
+                        </TableColumnItem>
+                        <TableColumnItem>
+                            <PropertyName>Status</PropertyName>
+                        </TableColumnItem>
+                        <TableColumnItem>
+                            <ScriptBlock>
+                            <!-- "`e[38;5;199m$($_.Startzeit)`e[0m" -->
+                            "$([Char]27)[38;5;199m$($_.Startzeit)$([Char]27)[0m"                            
+                            </ScriptBlock>
+                        </TableColumnItem>
+                    </TableColumnItems>
+                </TableRowEntry>
+            </TableRowEntries>
+        </TableControl>
+    </View>
+   </ViewDefinitions>
+</Configuration>
