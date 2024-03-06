@@ -20,7 +20,7 @@ class Server
     Server([String]$Name)
     {
         $this.Name = $Name
-        $this.Startzeit = Get-Date
+        $this.Startzeit = Get-Date -Hour (1..12 | Get-Random)
     }
 }
 
@@ -59,7 +59,14 @@ $FormatXml = @'
                         <TableColumnItem>
                             <ScriptBlock>
                             <!-- "`e[38;5;199m$($_.Startzeit)`e[0m" -->
-                            "$([Char]27)[38;5;199m$($_.Startzeit)$([Char]27)[0m"                            
+                            if ($_.Startzeit.Hour -lt 6) {
+                                "$([Char]27)[31;5;199m$($_.Startzeit.ToString("T"))$([Char]27)[0m"
+                            } elseif ($_.Startzeit.Hour -lt 12) {
+                                "$([Char]27)[33;5;199m$($_.Startzeit.ToString("T"))$([Char]27)[0m"
+                            } else {
+                                "$([Char]27)[32;5;199m$($_.Startzeit.ToString("T"))$([Char]27)[0m"
+                            }
+                            <!-- "$([Char]27)[32;5;199m$($_.Startzeit.ToString("T"))$([Char]27)[0m" -->                           
                             </ScriptBlock>
                         </TableColumnItem>
                     </TableColumnItems>

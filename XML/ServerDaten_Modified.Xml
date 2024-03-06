@@ -63,4 +63,11 @@
     <ps:cost>1.4</ps:cost>
     <ps:purchaseDate>06/02/2004</ps:purchaseDate>
   </ps:server>
+  <ps:server id="S_1009">
+    <ps:size>Special123</ps:size>
+    <ps:manufacturer>Dell</ps:manufacturer>
+    <ps:productType>PowerEdge 800</ps:productType>
+    <ps:cost>2.1</ps:cost>
+    <ps:purchaseDate>07/09/2004</ps:purchaseDate>
+  </ps:server>
 </ps:serverdaten>

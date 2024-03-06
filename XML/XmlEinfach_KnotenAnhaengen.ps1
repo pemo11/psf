@@ -14,18 +14,20 @@ $newServerNode = $xml.CreateElement("ps", "server", $ns)
 $newServerNode.SetAttribute("id", "S_1099")
 $newSizeNode = $xml.CreateElement("ps", "size", $ns)
 $newSizeNode.InnerText = "Special"
-$newServerNode.AppendChild($newSizeNode)
+[void]$newServerNode.AppendChild($newSizeNode)
 
-$newManufactureNode = $xml.CreateElement("ps", "Manufacturer", $ns)
+$newManufactureNode = $xml.CreateElement("ps", "manufacturer", $ns)
+# Aufruf ohne einen Namespace-Präfix
+# $newManufactureNode = $xml.CreateElement("manufacturer")
 $newManufactureNode.InnerText = "Supermicro"
-$newServerNode.AppendChild($newManufactureNode)
+[void]$newServerNode.AppendChild($newManufactureNode)
 
-$newCostNode = $xml.CreateElement("ps", "Cost", $ns)
+$newCostNode = $xml.CreateElement("ps", "cost", $ns)
 $newCostNode.InnerText = 9.1234
-$newServerNode.AppendChild($newCostNode)
+[void]$newServerNode.AppendChild($newCostNode)
 
 # Append the new node to the root element
-$xml.DocumentElement.AppendChild($newServerNode)
+[void]$xml.DocumentElement.AppendChild($newServerNode)
 
 # Save the modified XML back to the file
 try
