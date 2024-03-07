@@ -36,14 +36,14 @@ $FormatXml = @'
             <TableHeaders>
                 <TableColumnHeader>
                     <Label>Name</Label>
-                    <Width>20</Width>
+                    <Width>30</Width>
                 </TableColumnHeader>
                 <TableColumnHeader>
                     <Label>Status</Label>
-                    <Width>20</Width>
+                    <Width>30</Width>
                 </TableColumnHeader>
                 <TableColumnHeader>
-                    <Label>Starttime</Label>
+                    <Label>Startzeit</Label>
                     <Width>20</Width>
                 </TableColumnHeader>
             </TableHeaders>
@@ -60,11 +60,11 @@ $FormatXml = @'
                             <ScriptBlock>
                             <!-- "`e[38;5;199m$($_.Startzeit)`e[0m" -->
                             if ($_.Startzeit.Hour -lt 6) {
-                                "$([Char]27)[31;5;199m$($_.Startzeit.ToString("T"))$([Char]27)[0m"
+                                "$([Char]27)[31;5;7m$($_.Startzeit.ToString("T"))$([Char]27)[0m"
                             } elseif ($_.Startzeit.Hour -lt 12) {
-                                "$([Char]27)[33;5;199m$($_.Startzeit.ToString("T"))$([Char]27)[0m"
+                                "$([Char]27)[33;5;7m$($_.Startzeit.ToString("T"))$([Char]27)[0m"
                             } else {
-                                "$([Char]27)[32;5;199m$($_.Startzeit.ToString("T"))$([Char]27)[0m"
+                                "$([Char]27)[32;5;7m$($_.Startzeit.ToString("T"))$([Char]27)[0m"
                             }
                             <!-- "$([Char]27)[32;5;199m$($_.Startzeit.ToString("T"))$([Char]27)[0m" -->                           
                             </ScriptBlock>
@@ -90,5 +90,5 @@ $S3 = [Server]::new("Server789")
 $ServerListe = @($S1, $S2, $S3)
 
 Get-FormatData -TypeName Server
-$ServerListe | Format-Table -View Servertype
+$ServerListe | Format-Table -View Servertype -AutoSize
 
